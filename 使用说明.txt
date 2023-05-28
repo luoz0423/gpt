@@ -1,0 +1,23 @@
+/**
+
+ * @author 流浪
+
+ * @contact 434684601
+
+ * @date 2023-02-22
+ */
+推荐使用php8以上 速度更快 
+此播放器不支持直链必须有json接口
+支不支持解析全看你的json接口支不支持
+如果只想播放.m3u8.mp4.ts.mpd 资源 请填入目录下json.php
+例如：https://www.baidu.com/json.php?url=
+
+config.php自行修改 每个后面都有备注。
+
+artplayer/js/setting.js文件可在jsjiami.com加密防止被转换成json盗用
+加密后记得查看下ctrl+f你修改的密钥能不能搜索到，如果能搜到重新加密
+
+苹果cms自动下一集播放器JS代码自行在苹果CMS后台配置
+或者你的苹果cms目录/static/player/parse.js
+MacPlayer.Html = '<iframe border="0" src="你的解析地址'+MacPlayer.PlayUrl+'&next=//'+ (!MacPlayer.PlayLinkNext?'':document.domain+MacPlayer.PlayLinkNext) +'&title='+document.title.split("-")[0]+'" width="100%" height="100%" allowfullscreen="true" marginWidth="0" frameSpacing="0" marginHeight="0" frameBorder="0" scrolling="no" vspale="0" noResize></iframe>';
+MacPlayer.Show();
